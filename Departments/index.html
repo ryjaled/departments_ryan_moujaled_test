@@ -2,12 +2,16 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>COLLATE</title>
+		<title>ASHESI DEPARTMENTS</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
 		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
 		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+		<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 		<script>
 			var userAgent = navigator.userAgent + '';
@@ -27,6 +31,8 @@
 		<script src="js/app/app.js"></script>
 		<script src="js/app/bootstrap.js"></script>
 		<script src="js/lib/jquery.mobile.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
 		<style>
 			.ui-selectmenu.ui-popup .ui-input-search {
 				margin-left: .5em;
@@ -60,75 +66,99 @@
 				<h1>EC</h1>
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 			</div><!-- /header -->
-			<center><img src="img/trumpet.jpg" height="300" width="300"></center>
+			<!-- <center><img src="img/trumpet.jpg" height="300" width="300"></center> -->
 
 			<div data-role="content" style="text-shadow: none">
-				
-				<a href="#declareRegions" data-transition="flip"  data-role="button" data-transition='slide'>
-					Declare
-				</a> 
-				<a href="#resultPage" data-transition="flip"  data-role="button" data-transition='slide'>
-					Result
+
+					<a href="#businessadministration" class="waves-effect waves-light btn-large" data-transition="flip"  data-role="button" data-transition='slide' style="width: 100%; background:white; color: black;">
+					BUSINESS ADMINISTRATION
+				</a>
+				<a href="#computerscience" class="waves-effect waves-light btn-large" data-transition="pop"  data-role="button" data-transition='slide' style="width: 100%; background:white; color: black;">
+					COMPUTER SCIENCE
+				</a>
+				<a href="#engineering" class="waves-effect waves-light btn-large" data-transition="slide"  data-role="button" data-transition='slide' style="width: 100%; background: white; color: black;">
+					ENGINEERING
 				</a>
 				<br/>
 			</div>
 		</div><!-- /page -->
 
-		<div data-role="page" id="declareRegions" style="background: white">
+		<div data-role="page" id="businessadministration" style="background: black">
 
 			<div data-role="header" style="text-shadow: none">
-				<h1>EC</h1>
-				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+				<h1>BUSINESS ADMINISTRATION</h1>
+				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: black;border: none;">Refresh</a>
 			</div><!-- /header -->
 
-			<div data-role="content" style="text-shadow: none">
-				<form>
-					<select id='filter-menu' data-native-menu="false">
-						<option value='gr'>Greater Accra Region</option>
-						<option value='cr'>Central Region</option>
-						<option value='wr'>Western Region</option>
-						<option value='er'>Eastern Region</option>
-						
-					</select>
-					<select id='fileter-menu' data-native-menu="false">
-						<option value='ablekuma'>Ablekuma constituency</option>
-						<option value='kofi'>Kofi consitituency</option>
-						<option value='mann'>Mann constituency</option>
-					</select>
-					<label>
-					AFP</label>
-					<input type='text' name='afp'></input>
-					CPG</label>
-					<input type='text' name='cpg'></input>
-					EOF</label>
-					<input type='text' name='eof'></input>
-					<a href="landingPage" data-transition="pop"  data-role="button" data-transition='slide'>
-					Submit
-				</a>
-				</form>
-				
-				<br />
-				
+			<!-- <div data-role="content" style="text-shadow: none"> -->
+
+				<center><p style="font-size: 30px; color: #cccccc;"> Welcome to the Business Administration Department</p></center>
+
+				<img src="img/ba.png" width = "1300" style="position: relative; right: 750px">
+
+				<center><p style="color: #cccccc;">
+					As new technological advances and an increasingly global economy transform
+					the way businesses operate, it is extremely important for any nation to train
+					 the men and women who can lead their economies through this change. Ashesi
+					  seeks to train such people for Ghana by providing a well-rounded business
+						 education that emphasizes the fundamentals of business, and introduces students
+						  to the latest trends that are changing the business world. </p></center>
+
 			</div><!-- /content -->
 		</div>
-		<div data-role="page" id="resultPage" style="background: white">
+
+		<div data-role="page" id="computerscience" style="background: black">
+
+			<div data-role="header" style="text-shadow: white">
+
+				<h1>Computer Science</h1>
+				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext">Refresh</a>
+			</div><!-- /header -->
+
+	<!-- <div data-role="content" style="text-shadow: none"> -->
+
+				<center><p style="font-size: 30px; color: #cccccc;"> Welcome to the Computer Science Department</p></center>
+
+				<img src="img/cs.png" width = "1000" style="right: 1500px">
+
+				<center><p style="color: #cccccc;">
+					The computer science department is housed in the Ashesi Engineering Building.
+					While focused on similar values, most Computer Science courses occur within the building.
+
+					Ashesi's Computer Science programme focuses not only on software design
+					and programming, but also on empowering young people to be at the forefront of African
+					  growth by harnessing the power of technology. Students in the Computer
+						 Science programme are taken through robust foundational courses that
+						 prepare them to engage new technologies, and create software tools
+						 for African needs.</p></center>
+
+			</div><!-- /content -->
+		</div>
+
+		<div data-role="page" id="engineering" style="background: black">
 
 			<div data-role="header" style="text-shadow: none">
-				<h1>EC</h1>
+				<h1>ENGINEERING DEPARTMENT</h1>
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 			</div><!-- /header -->
 
-			<div data-role="content" style="text-shadow: none">
-					<h3>
-					AFP: 20</h3> 
-					<h3>
-					CPG: 50</h3> 
-					<h3>
-					EOF: 50</h3>
-					
-				</a>
-				<br />
-				
+			<center><p style="font-size: 30px; color: #cccccc;"> Welcome to the Engineering Department</p></center>
+
+			<img src="img/eng.png" width = "1000" style="position: relative; right: 500px">
+
+			<center><p style="color: #cccccc;">
+				The engineering department is housed in the Ashesi Engineering Building.
+				Most engineering classes occur within labs that look like the header image, and
+				are typically covered with engineering equipment.
+
+			The Engineering courses are partitioned into the following categories:
+			General Engineering Courses, Computer Engineering Courses, Electrical and
+			Electronic Engineering Courses, and Mechanical Engineering Courses. The course
+			  challenges students to analyze the design and function of systems by using principles
+				from different engineering fields including computer, electrical and electronic,
+				 and mechanical engineering.</p></center>
+
+
 			</div><!-- /content -->
 		</div>
 	</body>
